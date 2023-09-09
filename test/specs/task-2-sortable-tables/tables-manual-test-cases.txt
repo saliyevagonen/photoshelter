@@ -1,0 +1,44 @@
+[TC-01] Verify that the user can sort the table data by Last Name in ascending and descending order
+[TC-02] Verify that the user can sort the table data by First Name in ascending and descending order
+[TC-03] Verify that the user can sort the table data by Due Amount in ascending and descending order
+[TC-04] Verify that the user can edit the table data
+[TC-05] Verify that the user can delete the table data
+
+Error Handling test cases
+
+[TC-06] Verify the table data after refresh
+
+
+
+[TC-01] Verify that the user can sort the table data by Last Name in ascending order
+    Steps:
+        Navigate to url http://the-internet.herokuapp.com/tables
+        Click on the "Last Name" column header to sort the table in ascending order.
+    Expected Result: Last Names should be sorted in ascending order (e.g., Bach, Conway, Doe, Smith)
+
+
+TC-02: Verify that the user can sort the table data by First Name in ascending order
+    Steps:
+        Navigate to url http://the-internet.herokuapp.com/tables
+        Click on the "First Name" column header to sort the table in ascending order.
+    Expected Result: First Names should be sorted in ascending order (e.g., Frank, Jason, John, Tim)
+
+[TC-03] Verify that the user can sort the table data by Due Amount in ascending order
+    Steps:
+        Navigate to url http://the-internet.herokuapp.com/tables
+        Click on the "Due" column header to sort the table in ascending order.
+    Expected Result: Due Amounts should be sorted in ascending order (e.g., $50.00, $50.00, $51.00, $100.00)
+
+
+[TC-04] Verify that the user can edit the table data
+    Steps:
+        Navigate to url http://the-internet.herokuapp.com/tables
+        Click the "edit" link for the first row.
+    Expected Result: The URL should contain /tables#edit. (this is a current behavior, however I would expect that the user can edit the table data in the first row)
+
+
+[TC-05] Verify that the user can delete the table data
+    Steps:
+        Navigate to url http://the-internet.herokuapp.com/tables
+        Click the "delete" link for the first row.
+    Expected Result: The URL should contain /tables#delete. (this is a current behavior, however I would expect that the user can delete the first row)
